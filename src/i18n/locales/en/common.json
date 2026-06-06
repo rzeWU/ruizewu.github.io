@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "contact": "Contact",
+    "downloadCV": "Download CV",
+    "language": "Language"
+  },
+  "footer": {
+    "builtWith": "Built with React, TypeScript & Tailwind CSS",
+    "copyright": "Ruize Wu. All rights reserved."
+  },
+  "actions": {
+    "expand": "Click to expand",
+    "collapse": "Click to collapse",
+    "viewLinkedIn": "View LinkedIn",
+    "viewGitHub": "View GitHub",
+    "sendEmail": "Send Email",
+    "callPhone": "Call"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "about": "关于我",
+    "experience": "工作经历",
+    "education": "教育背景",
+    "skills": "技能",
+    "contact": "联系方式",
+    "downloadCV": "下载简历",
+    "language": "语言"
+  },
+  "footer": {
+    "builtWith": "使用 React, TypeScript 和 Tailwind CSS 构建",
+    "copyright": "吴瑞泽。保留所有权利。"
+  },
+  "actions": {
+    "expand": "点击展开",
+    "collapse": "点击收起",
+    "viewLinkedIn": "查看 LinkedIn",
+    "viewGitHub": "查看 GitHub",
+    "sendEmail": "发送邮件",
+    "callPhone": "拨打电话"
+  }
+}

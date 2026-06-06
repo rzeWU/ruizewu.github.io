@@ -1,0 +1,58 @@
+/* Google Fonts – must precede @import "tailwindcss" */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Crimson Text', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-navy-900: #1A2744;
+  --color-navy-800: #243356;
+  --color-navy-700: #2E4068;
+  --color-brass-400: #C9A96E;
+  --color-brass-300: #D4BC8C;
+  --color-brass-200: #DFCEAA;
+  --color-warm-50: #FAFAF9;
+  --color-warm-100: #F5F0EB;
+  --color-text: #1A1A2E;
+  --color-text-secondary: #4A4A5E;
+  --color-text-tertiary: #8A8A9E;
+  --color-hkbu: #2F5797;
+  --color-kent: #1E3D59;
+  --color-hubei: #8B1E3F;
+  --color-chaos: #C8102E;
+  --color-changjiang: #1A5276;
+  --color-boc: #AA182C;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #1A1A2E;
+  background: #FAFAF9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #1A2744;
+  color: #FFFFFF;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

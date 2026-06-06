@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "about": "關於我",
+    "experience": "工作經歷",
+    "education": "教育背景",
+    "skills": "技能",
+    "contact": "聯絡方式",
+    "downloadCV": "下載履歷",
+    "language": "語言"
+  },
+  "footer": {
+    "builtWith": "使用 React, TypeScript 及 Tailwind CSS 構建",
+    "copyright": "吳瑞澤。保留所有權利。"
+  },
+  "actions": {
+    "expand": "點擊展開",
+    "collapse": "點擊收起",
+    "viewLinkedIn": "查看 LinkedIn",
+    "viewGitHub": "查看 GitHub",
+    "sendEmail": "發送郵件",
+    "callPhone": "撥打電話"
+  }
+}

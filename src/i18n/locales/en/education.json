@@ -1,0 +1,14 @@
+{
+  "heading": "Education",
+
+  "hkbu": {
+    "description": "Double Degree Programme jointly offered with the University of Kent. Focused on optimisation modelling, statistical methods, and operational research applied to business decision-making."
+  },
+  "kent": {
+    "description": "Double Degree Programme jointly offered with HKBU. Covered predictive analytics, data mining, and business intelligence with an emphasis on translating data into strategic action."
+  },
+  "hubei": {
+    "description": "Foundation in economic theory, quantitative methods, and financial markets. Built the analytical mindset that underpins all subsequent academic and professional work.",
+    "note": "Foundation for quantitative and analytical work"
+  }
+}
