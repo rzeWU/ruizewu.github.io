@@ -2,31 +2,32 @@
   "heading": "Professional Experience",
 
   "hkbu": {
-    "summary": "Operational lead for two MSc programmes at HKBU Business School, orchestrating curriculum delivery, student success, and data-informed programme improvement for multinational cohorts.",
-    "desc1": "Manage end-to-end operational delivery for over 50% of core and elective courses across two MSc programmes, developing deep mastery of curriculum architecture and learning outcomes.",
-    "desc2": "Provide one-on-one academic consultation to 30+ postgraduate students annually, tailoring guidance to diverse disciplinary backgrounds and career aspirations — improving both course completion rates and programme satisfaction.",
-    "desc3": "Act as on-site technical facilitator for quantitative and coding-intensive courses, resolving real-time environment and debugging issues to maintain seamless instructional flow.",
-    "desc4": "Collect, analyse, and visualise student performance and feedback data to assist course leaders in compiling evidence-based teaching effectiveness reports. Leverage programme knowledge to counsel prospective applicants on career-market fit, enhancing pre-enrolment engagement."
+    "summary": "(MScDABE & MScAECON) Teaching Support & Programme Operations — Aug 2023 – Present | Kowloon, HK",
+    "desc1": "Programme Operations & Student Support: Provide end-to-end operational support for over 50% of core and elective courses, gaining in-depth understanding of curriculum structure and learning outcomes. Advise over 30 postgraduate students annually on course selection and academic planning, tailoring guidance to diverse academic backgrounds and career goals, resulting in improved course completion rates and programme satisfaction.",
+    "desc2": "Ad-hoc Academic Activity Coordination: Independently manage the full-cycle coordination of non-standard teaching sessions (e.g., make-up classes, mini-courses). Responsibilities include multi-platform communication via Outlook and Moodle, liaison with faculty offices for classroom assignments, and timely dissemination of venue and schedule changes to students, ensuring seamless attendance and zero operational confusion.",
+    "desc3": "In-Class Technical Facilitation: Serve as on-site technical support for quantitative and coding-intensive courses. Assist students in real-time with personal device environment setup and debugging during lectures, removing technical bottlenecks to maintain smooth instructional flow and enhance the hands-on learning experience.",
+    "desc4": "Market Insight & Prospective Student Engagement: Leverage deep programme knowledge to counsel prospective applicants on platforms such as RedNote, offering objective comparisons and career-market insights regarding Hong Kong employment. This contributes to pre-enrollment consultation and programme visibility.",
+    "desc5": "Data-Driven Teaching Evaluation & Internal Coordination: Proficient in Moodle and BUniPort academic systems. Collect and analyze student assignment, examination, and feedback data to assist course leaders in compiling teaching effectiveness reports. Maintain collaborative working relationships with multiple faculty members and elective instructors to ensure integrated programme delivery."
   },
 
   "chaos": {
-    "summary": "Built automated performance analytics pipelines for a commodity futures firm, transforming raw trading data into actionable trader metrics and visual dashboards.",
-    "desc1": "Designed and maintained a weekly data pipeline using Python and SQL to process trading account data, constructing key performance indicators — P&L ratios, win rates, trading volumes — for firm-wide review.",
-    "desc2": "Developed reusable Tableau dashboard templates that visualised trading behaviour patterns across multiple commodity futures products, enabling consistent cross-product performance comparison.",
-    "desc3": "Automated the extraction and structured delivery of client trading datasets to support weekly performance reviews, eliminating manual data wrangling."
+    "summary": "Research Assistant Intern — Nov 2021 – May 2022 | Hubei, CN",
+    "desc1": "Collected and processed weekly trading account data to construct performance metrics (P&L ratio, win rate, trading volume) using Python and SQL.",
+    "desc2": "Developed reusable Tableau templates for tracking trading patterns across commodity futures products.",
+    "desc3": "Automated weekly extraction and delivery of client trading datasets to support firm-wide performance reviews."
   },
 
   "changjiang": {
-    "summary": "Automated financial market data ingestion and built investment research dashboards at a major futures brokerage, supporting daily analyst workflows.",
-    "desc1": "Engineered Python-based data automation scripts (Pandas) to extract market data from the Wind API and load it into MySQL, replacing manual data collection with a reliable scheduled pipeline.",
-    "desc2": "Designed and maintained interactive data visualisation dashboards to track sector-level trends, directly supporting the investment research team's daily decision-making.",
-    "desc3": "Authored a full cycle of periodic analytical reports — daily briefs, weekly summaries, and monthly deep-dives — synthesising quantitative findings into concise narratives for the investment team."
+    "summary": "Research Assistant Intern — Aug 2021 – Sep 2021 | Hubei, CN",
+    "desc1": "Automated market data workflows using Python (Pandas) to extract from Wind API and load into MySQL.",
+    "desc2": "Built and maintained data visualization dashboards for sector trend analysis and investment support.",
+    "desc3": "Authored periodic analytical reports (daily, weekly, monthly) to communicate findings to the investment team."
   },
 
   "boc": {
-    "summary": "Contributed to a Digital Campus transformation project with Central China Normal University, establishing data infrastructure and applying NLP to student feedback at scale.",
-    "desc1": "Supported the Digital Campus Development initiative by collecting and standardising fragmented offline institutional data (e.g. fixed-asset records), designing MySQL database schemas for centralised, real-time access.",
-    "desc2": "Conducted Python-based natural language processing on semester-long student course evaluations — generating word-frequency visualisations that surfaced thematic insights for faculty and departmental review.",
-    "desc3": "Collaborated across university and banking technology teams to bridge academic needs with fintech solutions, gaining early exposure to the intersection of education and financial technology."
+    "summary": "Project Assistant Intern — Jul 2021 – Aug 2021 | Hubei, CN",
+    "desc1": "Contributed to the Digital Campus Development project with Central China Normal University, focusing on data integration and standardization.",
+    "desc2": "Collected and standardized offline institutional data (e.g., fixed asset records) and designed MySQL database tables for centralized, real-time record access.",
+    "desc3": "Conducted Python-based text analysis of student course evaluations each semester, generating word-frequency clouds to extract thematic insights for faculty and departmental assessment."
   }
 }

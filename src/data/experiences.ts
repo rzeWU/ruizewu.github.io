@@ -16,6 +16,7 @@ export const experiences: Experience[] = [
       'experience.hkbu.desc2',
       'experience.hkbu.desc3',
       'experience.hkbu.desc4',
+      'experience.hkbu.desc5',
     ],
     skills: ['workflow-automation', 'data-analysis', 'reporting', 'student-consultation', 'event-coordination', 'cross-cultural'],
     metrics: [
@@ -59,7 +60,7 @@ export const experiences: Experience[] = [
     startDate: '2021-08',
     endDate: '2021-09',
     location: 'Hubei, China',
-    logo: { src: '/logos/changjiang.svg', alt: 'Changjiang Futures', backgroundColor: '#1A5276' },
+    logo: { src: '/logos/changjiang.png', alt: 'Changjiang Futures', backgroundColor: '#FFFFFF' },
     summaryKey: 'experience.changjiang.summary',
     descriptionKeys: [
       'experience.changjiang.desc1',
@@ -83,7 +84,7 @@ export const experiences: Experience[] = [
     startDate: '2021-07',
     endDate: '2021-08',
     location: 'Hubei, China',
-    logo: { src: '/logos/boc.svg', alt: 'BOC Financial Technology', backgroundColor: '#AA182C' },
+    logo: { src: '/logos/boc.png', alt: 'BOC Financial Technology', backgroundColor: '#FFFFFF' },
     summaryKey: 'experience.boc.summary',
     descriptionKeys: [
       'experience.boc.desc1',

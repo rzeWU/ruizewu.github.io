@@ -1,9 +1,2 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150">
-  <rect width="500" height="150" rx="20" fill="#AA182C"/>
-  <circle cx="100" cy="75" r="38" fill="none" stroke="white" stroke-width="4"/>
-  <circle cx="100" cy="75" r="22" fill="none" stroke="white" stroke-width="2.5"/>
-  <circle cx="100" cy="75" r="7" fill="white"/>
-  <text x="175" y="55" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" letter-spacing="3">BOC FINANCIAL</text>
-  <text x="175" y="85" fill="#FFD0D0" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" letter-spacing="6">TECHNOLOGY</text>
-  <text x="175" y="118" fill="#FFB6B6" font-family="SimHei, STHeiti, Microsoft YaHei, sans-serif" font-size="14">中银金融科技</text>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>MVD2CM6KMF6CMA9T</RequestId><HostId>+r4e0pksoMEs4gJntRbQM2Wghc+Ng+mdL19LylT07QV8wKT9JY5/Nv3TGE+65BLF//AeZkJ6O6B7bW5yoOATD+3HArUZzqDn</HostId></Error>
