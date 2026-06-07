@@ -146,7 +146,7 @@ function ExperienceCardItem({ experience: exp, index, isExpanded, onToggle, inVi
               </div>
 
               <p className="text-sm text-text-secondary mt-3 leading-relaxed">
-                {t(exp.summaryKey as Parameters<typeof t>[0])}
+                {t(`experience:${exp.summaryKey}`)}
               </p>
             </div>
           </div>
@@ -187,7 +187,7 @@ function ExperienceCardItem({ experience: exp, index, isExpanded, onToggle, inVi
                       className="text-sm text-text-secondary leading-relaxed flex gap-2"
                     >
                       <span className="text-brass-400 mt-0.5 flex-shrink-0">▸</span>
-                      <span>{t(key as Parameters<typeof t>[0])}</span>
+                      <span>{t(`experience:${key}`)}</span>
                     </motion.li>
                   ))}
                 </ul>
