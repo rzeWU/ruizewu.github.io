@@ -5,10 +5,10 @@ import { useInView } from '../../hooks/useInView';
 import type { SkillCategory } from '../../types/cv';
 
 const categoryLabels: Record<SkillCategory, string> = {
-  technical: 'skills.technical',
-  'data-tools': 'skills.dataTools',
-  professional: 'skills.professional',
-  languages: 'skills.languages',
+  technical: 'technical',
+  'data-tools': 'dataTools',
+  professional: 'professional',
+  languages: 'languages',
 };
 
 // Skill badge color per category
@@ -20,7 +20,7 @@ const categoryColors: Record<SkillCategory, string> = {
 };
 
 export function SkillsSection() {
-  const { t } = useTranslation();
+  const { t } = useTranslation('skills');
   const { ref, inView } = useInView();
 
   const grouped = skills.reduce(
@@ -42,7 +42,7 @@ export function SkillsSection() {
           transition={{ duration: 0.6 }}
           className="font-serif text-3xl sm:text-4xl font-semibold text-navy-900 mb-12"
         >
-          {t('skills.heading')}
+          {t('heading')}
         </motion.h2>
 
         {/* Skill categories */}
@@ -87,9 +87,9 @@ export function SkillsSection() {
             transition={{ duration: 0.4, delay: 0.4 }}
             className="text-xs uppercase tracking-[0.2em] text-text-tertiary mb-3"
           >
-            {t('skills.languages')}
+            {t('languages')}
           </motion.h3>
-          <p className="text-sm text-text-tertiary mb-5">{t('skills.languageNote')}</p>
+          <p className="text-sm text-text-tertiary mb-5">{t('languageNote')}</p>
           <div className="space-y-4 max-w-md">
             {languages.map((lang, li) => (
               <motion.div

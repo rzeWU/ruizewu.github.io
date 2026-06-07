@@ -5,7 +5,7 @@ import { educationList } from '../../data/education';
 import { useInView } from '../../hooks/useInView';
 
 export function EducationSection() {
-  const { t } = useTranslation();
+  const { t } = useTranslation('education');
   const { ref, inView } = useInView();
 
   return (
@@ -17,7 +17,7 @@ export function EducationSection() {
           transition={{ duration: 0.6 }}
           className="font-serif text-3xl sm:text-4xl font-semibold text-navy-900 mb-12"
         >
-          {t('education.heading')}
+          {t('heading')}
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -53,12 +53,12 @@ export function EducationSection() {
               )}
 
               <p className="text-sm text-text-secondary leading-relaxed text-center">
-                {t(edu.descriptionKey as Parameters<typeof t>[0])}
+                {t(edu.descriptionKey)}
               </p>
 
               {edu.noteKey && (
                 <p className="text-xs text-text-tertiary text-center mt-2 italic">
-                  {t(edu.noteKey as Parameters<typeof t>[0])}
+                  {t(edu.noteKey)}
                 </p>
               )}
             </motion.div>
