@@ -85,6 +85,7 @@ export const experiences: Experience[] = [
     endDate: '2021-08',
     location: 'Hubei, China',
     logo: { src: '/logos/boc.png', alt: 'BOC Financial Technology', backgroundColor: '#FFFFFF' },
+    partnerLogo: { src: '/logos/ccnu.png', alt: 'Central China Normal University', backgroundColor: '#FFFFFF' },
     summaryKey: 'boc.summary',
     descriptionKeys: [
       'boc.desc1',

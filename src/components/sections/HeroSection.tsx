@@ -1,12 +1,8 @@
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 import { Mail, Phone } from 'lucide-react';
 import { profile } from '../../data/profile';
-import { ScrollIndicator } from '../ui/ScrollIndicator';
 
 export function HeroSection() {
-  const { t } = useTranslation();
-
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center bg-navy-900 overflow-hidden">
       {/* Background decoration */}
@@ -53,15 +49,6 @@ export function HeroSection() {
             {profile.nameZh}
           </p>
         </motion.div>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          className="text-lg sm:text-xl text-white/80 leading-relaxed mt-6 max-w-2xl mx-auto"
-        >
-          {t(profile.titleKey)}
-        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -125,7 +112,6 @@ export function HeroSection() {
         </motion.div>
       </div>
 
-      <ScrollIndicator />
     </section>
   );
 }

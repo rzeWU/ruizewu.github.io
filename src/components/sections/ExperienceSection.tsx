@@ -176,6 +176,17 @@ function ExperienceCardItem({ experience: exp, index, isExpanded, onToggle, inVi
                   </div>
                 )}
 
+                {/* Partner logo */}
+                {exp.partnerLogo && (
+                  <div className="flex items-center gap-3 mb-5 bg-warm-50 rounded-xl p-3">
+                    <Logo logo={exp.partnerLogo} size="sm" />
+                    <div>
+                      <p className="text-xs text-text-tertiary uppercase tracking-wider">Partner Institution</p>
+                      <p className="text-sm font-medium text-navy-900">{exp.partnerLogo.alt}</p>
+                    </div>
+                  </div>
+                )}
+
                 {/* Descriptions */}
                 <ul className="space-y-3">
                   {exp.descriptionKeys.map((key, i) => (

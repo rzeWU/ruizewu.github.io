@@ -18,6 +18,7 @@ export interface Experience {
   endDate: string | null;
   location: string;
   logo: LogoSpec;
+  partnerLogo?: LogoSpec;
   summaryKey: string;
   descriptionKeys: string[];
   skills: string[];
