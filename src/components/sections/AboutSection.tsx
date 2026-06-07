@@ -4,10 +4,11 @@ import { useInView } from '../../hooks/useInView';
 import { profile } from '../../data/profile';
 
 export function AboutSection() {
-  const { t } = useTranslation();
+  const { t } = useTranslation('about');
   const { ref, inView } = useInView();
 
-  const content = t('about.content');
+  const content = t('content');
+  const heading = t('heading');
   const paragraphs = content.split('\n\n');
 
   return (
@@ -19,7 +20,7 @@ export function AboutSection() {
           transition={{ duration: 0.6 }}
           className="font-serif text-3xl sm:text-4xl font-semibold text-navy-900 mb-10"
         >
-          About Me
+          {heading}
         </motion.h2>
 
         {/* Avatar + intro side by side on desktop */}
