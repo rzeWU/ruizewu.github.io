@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { Mail, Phone, FileDown, ExternalLink } from 'lucide-react';
+import { Mail, Phone, ExternalLink } from 'lucide-react';
 import { profile } from '../../data/profile';
 import { useInView } from '../../hooks/useInView';
 
@@ -34,13 +34,6 @@ export function ContactSection() {
       href: profile.github,
       ariaLabel: t('actions.viewGitHub'),
       external: true,
-    },
-    {
-      icon: FileDown,
-      label: t('nav.downloadCV'),
-      href: '/resume-en.pdf',
-      ariaLabel: t('nav.downloadCV'),
-      download: true,
     },
   ];
 
@@ -76,7 +69,6 @@ export function ContactSection() {
               href={link.href}
               target={link.external ? '_blank' : undefined}
               rel={link.external ? 'noopener noreferrer' : undefined}
-              download={link.download ? true : undefined}
               aria-label={link.ariaLabel}
               className="flex items-center gap-3 px-5 py-4 rounded-xl bg-white/5 border border-white/10 text-white/70 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all"
             >
