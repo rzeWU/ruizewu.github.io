@@ -19,7 +19,7 @@ function formatDate(start: string, end: string | null): string {
 }
 
 export function ExperienceSection() {
-  const { t } = useTranslation();
+  const { t } = useTranslation('experience');
   const { ref, inView } = useInView();
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const reducedMotion = useReducedMotion();
@@ -37,7 +37,7 @@ export function ExperienceSection() {
           transition={{ duration: 0.6 }}
           className="font-serif text-3xl sm:text-4xl font-semibold text-navy-900 mb-4"
         >
-          {t('experience.heading')}
+          {t('heading')}
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 10 }}
@@ -80,7 +80,7 @@ interface CardProps {
 }
 
 function ExperienceCardItem({ experience: exp, index, isExpanded, onToggle, inView, reducedMotion }: CardProps) {
-  const { t } = useTranslation();
+  const { t } = useTranslation('experience');
   const isHKBU = exp.type === 'work';
 
   const relatedSkills = allSkills.filter((s) => exp.skills.includes(s.id));
@@ -146,7 +146,7 @@ function ExperienceCardItem({ experience: exp, index, isExpanded, onToggle, inVi
               </div>
 
               <p className="text-sm text-text-secondary mt-3 leading-relaxed">
-                {t(`experience:${exp.summaryKey}`)}
+                {t(exp.summaryKey)}
               </p>
             </div>
           </div>
@@ -187,7 +187,7 @@ function ExperienceCardItem({ experience: exp, index, isExpanded, onToggle, inVi
                       className="text-sm text-text-secondary leading-relaxed flex gap-2"
                     >
                       <span className="text-brass-400 mt-0.5 flex-shrink-0">▸</span>
-                      <span>{t(`experience:${key}`)}</span>
+                      <span>{t(key)}</span>
                     </motion.li>
                   ))}
                 </ul>
