@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150">
+  <rect width="500" height="150" rx="20" fill="#1A5276"/>
+  <g transform="translate(155, 75)">
+    <polygon points="0,20 45,-30 90,-5 135,-40 180,-15 225,-35 250,-10" fill="none" stroke="#D4E6F1" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <line x1="250" y1="-35" x2="250" y2="25" stroke="#C9A96E" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="290" y="58" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" letter-spacing="3">CHANGJIANG</text>
+  <text x="290" y="88" fill="#D4E6F1" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" letter-spacing="6">FUTURES</text>
+  <text x="290" y="118" fill="#87CEEB" font-family="SimHei, STHeiti, Microsoft YaHei, sans-serif" font-size="14">长江期货</text>
+</svg>
