@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useInView } from '../../hooks/useInView';
+import { profile } from '../../data/profile';
 
 export function AboutSection() {
   const { t } = useTranslation();
@@ -18,21 +19,38 @@ export function AboutSection() {
           transition={{ duration: 0.6 }}
           className="font-serif text-3xl sm:text-4xl font-semibold text-navy-900 mb-10"
         >
-          {t('about.heading')}
+          About Me
         </motion.h2>
 
-        <div className="prose prose-lg max-w-none">
-          {paragraphs.map((paragraph, i) => (
-            <motion.p
-              key={i}
-              initial={{ opacity: 0, y: 16 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.2 + i * 0.15 }}
-              className="text-text-secondary leading-relaxed text-base sm:text-lg mb-5 last:mb-0 font-light"
+        {/* Avatar + intro side by side on desktop */}
+        <div className="flex flex-col sm:flex-row gap-8 mb-8">
+          {profile.avatarUrl && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={inView ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.5 }}
+              className="flex-shrink-0"
             >
-              {paragraph}
-            </motion.p>
-          ))}
+              <img
+                src={profile.avatarUrl}
+                alt={profile.name}
+                className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl border-2 border-brass-400/30 shadow-sm object-cover"
+              />
+            </motion.div>
+          )}
+          <div>
+            {paragraphs.map((paragraph, i) => (
+              <motion.p
+                key={i}
+                initial={{ opacity: 0, y: 16 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: 0.2 + i * 0.15 }}
+                className="text-text-secondary leading-relaxed text-base sm:text-lg mb-5 last:mb-0 font-light"
+              >
+                {paragraph}
+              </motion.p>
+            ))}
+          </div>
         </div>
 
         {/* Visual accent */}

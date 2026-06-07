@@ -68,8 +68,10 @@ export interface Profile {
   location: string;
   email: string;
   phone: string;
+  phoneCN?: string;
   linkedin: string;
   github: string;
+  avatarUrl?: string;
 }
 
 export interface NavItem {

@@ -25,6 +25,22 @@ export function HeroSection() {
       />
 
       <div className="relative z-10 text-center px-6 max-w-3xl">
+        {/* Avatar */}
+        {profile.avatarUrl && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            className="mb-8 flex justify-center"
+          >
+            <img
+              src={profile.avatarUrl}
+              alt={profile.name}
+              className="w-28 h-28 rounded-full border-2 border-brass-400/40 shadow-lg object-cover"
+            />
+          </motion.div>
+        )}
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -51,8 +67,15 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-8 flex flex-wrap items-center justify-center gap-4 text-white/60 text-sm"
+          className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-white/60 text-sm"
         >
+          <span className="flex items-center gap-1.5">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Hong Kong</span>
+          </span>
           <span className="flex items-center gap-1.5">
             <Mail size={14} />
             <a href={`mailto:${profile.email}`} className="hover:text-brass-300 transition-colors">
@@ -65,13 +88,14 @@ export function HeroSection() {
               {profile.phone}
             </a>
           </span>
-          <span className="flex items-center gap-1.5">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-            <span>{t('hero.location')}</span>
-          </span>
+          {profile.phoneCN && (
+            <span className="flex items-center gap-1.5">
+              <Phone size={14} />
+              <a href={`tel:${profile.phoneCN}`} className="hover:text-brass-300 transition-colors">
+                {profile.phoneCN}
+              </a>
+            </span>
+          )}
         </motion.div>
 
         <motion.div

@@ -21,7 +21,7 @@ export const experiences: Experience[] = [
     metrics: [
       { label: 'Duration', value: '2y 10m' },
       { label: 'Programmes', value: '2 MSc' },
-      { label: 'Students/year', value: '30+' },
+      { label: 'Students/yr', value: '30+' },
     ],
     brandColor: '#2F5797',
     type: 'work',
@@ -35,7 +35,7 @@ export const experiences: Experience[] = [
     startDate: '2021-11',
     endDate: '2022-05',
     location: 'Hubei, China',
-    logo: { src: '/logos/chaos.svg', alt: 'Chaos Ternary Futures', backgroundColor: '#C8102E' },
+    logo: { src: '/logos/chaos.png', alt: 'Chaos Ternary Futures', backgroundColor: '#FFFFFF' },
     summaryKey: 'experience.chaos.summary',
     descriptionKeys: [
       'experience.chaos.desc1',
@@ -69,7 +69,7 @@ export const experiences: Experience[] = [
     skills: ['python', 'sql', 'data-analysis', 'tableau', 'reporting'],
     metrics: [
       { label: 'Duration', value: '2 mos' },
-      { label: 'Reports', value: 'Daily/Weekly/Monthly' },
+      { label: 'Reports', value: 'Daily/Wkly/Monthly' },
     ],
     brandColor: '#1A5276',
     type: 'internship',

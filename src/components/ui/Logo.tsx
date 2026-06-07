@@ -1,6 +1,8 @@
 import type { LogoSpec } from '../../types/cv';
 import { cn } from '../../utils/cn';
 
+const BASE = import.meta.env.BASE_URL;
+
 interface LogoProps {
   logo: LogoSpec;
   size?: 'sm' | 'md' | 'lg';
@@ -8,41 +10,40 @@ interface LogoProps {
 }
 
 const sizeMap = {
-  sm: 'h-8 w-8',
-  md: 'h-14 w-14',
-  lg: 'h-20 w-20',
+  sm: 'h-10 w-10',
+  md: 'h-16 w-16',
+  lg: 'h-24 w-24',
+};
+
+const imgSizeClass = {
+  sm: 'max-h-7 max-w-7',
+  md: 'max-h-11 max-w-11',
+  lg: 'max-h-18 max-w-18',
 };
 
 export function Logo({ logo, size = 'md', className }: LogoProps) {
+  // Handle both absolute paths (starting with /) and relative paths
+  const src = logo.src.startsWith('/') ? `${BASE}${logo.src.slice(1)}` : logo.src;
+
   return (
     <div
       className={cn(
-        'flex-shrink-0 rounded-xl overflow-hidden flex items-center justify-center bg-white',
+        'flex-shrink-0 rounded-xl flex items-center justify-center overflow-hidden',
+        logo.backgroundColor ? '' : 'bg-white border border-warm-100',
         sizeMap[size],
         className
       )}
       style={logo.backgroundColor ? { backgroundColor: logo.backgroundColor } : undefined}
     >
       <img
-        src={logo.src}
+        src={src}
         alt={logo.alt}
         className={cn(
           'object-contain',
-          size === 'sm' ? 'p-1' : size === 'md' ? 'p-2' : 'p-3',
-          size === 'sm' ? 'max-h-6 max-w-6' : size === 'md' ? 'max-h-10 max-w-10' : 'max-h-16 max-w-16'
+          size === 'sm' ? 'p-1.5' : size === 'md' ? 'p-2' : 'p-3',
+          imgSizeClass[size]
         )}
-        onError={(e) => {
-          // Fallback: show initials if logo fails to load
-          const target = e.currentTarget;
-          const parent = target.parentElement;
-          if (parent) {
-            target.style.display = 'none';
-            const span = document.createElement('span');
-            span.className = 'text-white font-serif font-bold ' + (size === 'sm' ? 'text-xs' : size === 'md' ? 'text-sm' : 'text-lg');
-            span.textContent = logo.alt.split(' ').map(w => w[0]).join('').slice(0, 3);
-            parent.appendChild(span);
-          }
-        }}
+        loading="lazy"
       />
     </div>
   );

@@ -35,7 +35,7 @@ export const educationList: Education[] = [
     field: '',
     startYear: 2018,
     endYear: 2022,
-    logo: { src: '/logos/hubei.svg', alt: 'Hubei University of Economics' },
+    logo: { src: '/logos/hubei.png', alt: 'Hubei University of Economics' },
     descriptionKey: 'education.hubei.description',
     noteKey: 'education.hubei.note',
     brandColor: '#8B1E3F',
