@@ -29,6 +29,32 @@ export const experiences: Experience[] = [
     order: 1,
   },
   {
+    id: 'futu',
+    organization: 'Futu Holdings Limited',
+    organizationShort: 'Futu',
+    role: 'Operations Specialist, Pan-English Region (Content Growth)',
+    startDate: '2024-10',
+    endDate: '2025-09',
+    location: 'Shenzhen, China',
+    logo: { src: '/logos/futu.svg', alt: 'Futu Holdings Limited' },
+    summaryKey: 'futu.summary',
+    descriptionKeys: [
+      'futu.desc1',
+      'futu.desc2',
+      'futu.desc3',
+      'futu.desc4',
+    ],
+    skills: ['content-operations', 'community-engagement', 'user-segmentation', 'cross-cultural', 'reporting'],
+    metrics: [
+      { label: 'Duration', value: '12 mos' },
+      { label: 'Tags / day', value: '~1,000' },
+      { label: 'Market', value: 'UK / EN' },
+    ],
+    brandColor: '#0052D9',
+    type: 'work',
+    order: 2,
+  },
+  {
     id: 'chaos',
     organization: 'Chaos Ternary Futures',
     organizationShort: 'Chaos Futures',
@@ -50,7 +76,7 @@ export const experiences: Experience[] = [
     ],
     brandColor: '#C8102E',
     type: 'internship',
-    order: 2,
+    order: 3,
   },
   {
     id: 'changjiang',
@@ -74,7 +100,7 @@ export const experiences: Experience[] = [
     ],
     brandColor: '#1A5276',
     type: 'internship',
-    order: 3,
+    order: 4,
   },
   {
     id: 'boc',
@@ -99,6 +125,6 @@ export const experiences: Experience[] = [
     ],
     brandColor: '#AA182C',
     type: 'internship',
-    order: 4,
+    order: 5,
   },
 ];

@@ -10,6 +10,14 @@
     "desc5": "Data-Driven Teaching Evaluation & Internal Coordination: Proficient in Moodle and BUniPort academic systems. Collect and analyze student assignment, examination, and feedback data to assist course leaders in compiling teaching effectiveness reports. Maintain collaborative working relationships with multiple faculty members and elective instructors to ensure integrated programme delivery."
   },
 
+  "futu": {
+    "summary": "Content & Community Operations, Pan-English Region (Contract) — Oct 2024 – Sep 2025 | Shenzhen, CN",
+    "desc1": "Market Content Curation — Curated and updated trending-stock lists for the English-speaking (UK) market, typically tracking the top-5 movers per region each week (e.g., NVDA, PLTR, AVGO, BTC during tenure), ensuring timely, market-relevant content for the user base.",
+    "desc2": "Multi-channel Content Operations — Managed daily official social posts across the trading day (pre-market warm-ups, intraday news and volatility updates, and post-market earnings and index summaries), curated KOL commentary, and distributed real-time earnings live-stream links; posting cadence flexed with event intensity, including earnings season, FOMC windows, and geopolitical shocks such as tariff escalation and US–Iran tensions.",
+    "desc3": "Community Engagement & User Segmentation — Tagged and classified an average of ~1,000 user comments per day against a structured tag taxonomy (policy, analysis, live-trading, signal, and discussion), enabling real-time precision content push and personalised engagement.",
+    "desc4": "Market Intelligence & Editorial Summaries — Synthesised each trading day's macro-policy developments and the most-discussed user topics into concise app push notifications, translating market insight into user-facing communication."
+  },
+
   "chaos": {
     "summary": "Research Assistant Intern — Nov 2021 – May 2022 | Hubei, CN",
     "desc1": "Collected and processed weekly trading account data to construct performance metrics (P&L ratio, win rate, trading volume) using Python and SQL.",
