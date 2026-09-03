@@ -48,7 +48,7 @@ export const experiences: Experience[] = [
     metrics: [
       { label: 'Duration', value: '12 mos' },
       { label: 'Tags / day', value: '~1,000' },
-      { label: 'Market', value: 'UK / EN' },
+      { label: 'Markets', value: 'US · SG · AU · MY' },
     ],
     brandColor: '#0052D9',
     type: 'work',
