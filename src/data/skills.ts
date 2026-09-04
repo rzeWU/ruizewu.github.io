@@ -11,6 +11,9 @@ export const skills: Skill[] = [
   { id: 'cloud', name: 'Alibaba Cloud', category: 'data-tools' },
   { id: 'github', name: 'GitHub', category: 'data-tools' },
   { id: 'jupyter', name: 'Jupyter / Colab', category: 'data-tools' },
+  { id: 'linux', name: 'Linux', category: 'data-tools' },
+  { id: 'latex', name: 'LaTeX', category: 'data-tools' },
+  { id: 'claude', name: 'Claude', category: 'data-tools' },
 
   // Professional
   { id: 'data-analysis', name: 'Data Analysis', category: 'professional' },
